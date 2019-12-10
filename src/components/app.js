@@ -1,9 +1,14 @@
 import React from 'react';
 
-const App = () => (
-  <div className="app">
-    <h1>React App</h1>
-  </div>
-);
+import EmployeesContainer from 'containers/EmployeesContainer';
+
+const App = () => {
+  return (
+    <div className="app">
+      <h1>Reward Gateway Interview Assessment</h1>
+      <EmployeesContainer />
+    </div>
+  );
+};
 
 export default App;
