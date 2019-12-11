@@ -13,7 +13,10 @@ export const getEmpList = async () => {
     .get(empListUrl, {
       auth: credentials,
       headers: {
-        'Access-Control-Request-Methods': '*'
+        'Access-Control-Request-Methods': '*',
+        'Access-Control-Request-Headers':
+          'Origin, X-Requested-With, Content-Type, Accept',
+        'Access-Control-Allow-Origin': 'localhost, 127.0.0.1, ::1'
       }
     })
     .then(data => data);

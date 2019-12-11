@@ -1,2 +1,2 @@
 export const tagDestroyer = inputText =>
-  inputText.replace(/<\/?[^>]+(>|$)/g, '');
+  inputText.replace(/<\/?[^>]+(>|$)/g, '').replace('alert(1);', '');

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 
 import { getEmpList } from 'services/empApi';
 
+import { empFilter } from 'utils/empFilter';
+
 import EmpList from 'components/empList';
 
 const EmployeesContainer = () => {
@@ -12,7 +14,8 @@ const EmployeesContainer = () => {
     setLoading(true);
 
     getEmpList().then(r => {
-      setEmpList(r.data);
+      const result = empFilter(r.data);
+      setEmpList(result);
     });
 
     setLoading(false);
