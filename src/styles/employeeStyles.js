@@ -5,9 +5,9 @@ export const EmployeeWrapper = styled.section`
   justify-content: space-around;
   align-items: center;
 
-  padding-top: 1rem;
-  margin-bottom: 2rem;
-  border-top: 1px solid #cccccc;
+  padding: 0.5rem;
+  border-top: 0.2rem solid #cccccc;
+  ${props => `background-color: ${props.color}`}
 
   &:first-of-type {
     border-top: 0;

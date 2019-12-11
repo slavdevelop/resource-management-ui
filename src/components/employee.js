@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { tagDestroyer } from 'utils/tagDestroyer';
-
 import {
   Image,
   Name,
@@ -12,10 +11,11 @@ import {
 } from 'styles/employeeStyles';
 
 import useModal from 'hooks/useModal';
-
 import Modal from 'components/modal';
 
-const Employee = ({ avatar, bio, company, name, title, uuid }) => {
+import Dropdown from './dropdown';
+
+const Employee = ({ avatar, bio, company, name, title, uuid, setBgColor }) => {
   const { isShowing, toggle } = useModal();
 
   return (
@@ -30,6 +30,7 @@ const Employee = ({ avatar, bio, company, name, title, uuid }) => {
       </Personal>
       <Company>{company}</Company>
       <Bio>{tagDestroyer(bio)}</Bio>
+      <Dropdown />
     </>
   );
 };
