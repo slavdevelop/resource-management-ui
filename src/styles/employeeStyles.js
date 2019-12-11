@@ -26,7 +26,7 @@ export const EmployeeWrapper = styled.section`
 export const Image = styled.img`
   width: 5rem;
   border-radius: 50%;
-  padding: 0.8rem;
+  padding: 0.5rem;
   margin-right: 0.8rem;
 
   &:hover {
@@ -35,23 +35,23 @@ export const Image = styled.img`
 `;
 
 export const Name = styled.div`
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 `;
 
 export const Title = styled.div`
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-style: italic;
 `;
 
 export const Company = styled.div`
-  font-size: 1.05rem;
+  font-size: 0.9rem;
   width: 20%;
 `;
 
 export const Bio = styled.div`
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-style: italic;
   width: 20%;
 `;
