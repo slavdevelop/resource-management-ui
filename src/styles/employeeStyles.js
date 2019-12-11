@@ -5,8 +5,8 @@ export const EmployeeWrapper = styled.section`
   justify-content: space-around;
   align-items: center;
 
-  padding-top: 10px;
-  margin-bottom: 20px;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
   border-top: 1px solid #cccccc;
 
   &:first-of-type {
@@ -17,14 +17,17 @@ export const EmployeeWrapper = styled.section`
     margin-bottom: 0;
     padding-bottom: 0;
   }
+
+  h1 {
+    text-align: center;
+  }
 `;
 
 export const Image = styled.img`
-  width: 64px;
-  height: 64px;
+  width: 5rem;
   border-radius: 50%;
-  padding: 10px;
-  margin-right: 10px;
+  padding: 0.8rem;
+  margin-right: 0.8rem;
 
   &:hover {
     cursor: pointer;
@@ -32,30 +35,30 @@ export const Image = styled.img`
 `;
 
 export const Name = styled.div`
-  font-size: 18px;
+  font-size: 1.05rem;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
 `;
 
 export const Title = styled.div`
-  font-size: 14px;
+  font-size: 0.8rem;
   font-style: italic;
 `;
 
 export const Company = styled.div`
-  font-size: 18px;
-  width: 22%;
+  font-size: 1.05rem;
+  width: 20%;
 `;
 
 export const Bio = styled.div`
-  font-size: 14px;
+  font-size: 0.8rem;
   font-style: italic;
-  width: 22%;
+  width: 20%;
 `;
 
 export const Personal = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 22%;
+  width: 20%;
 `;

@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
 import { getEmpList } from 'services/empApi';
-
 import { empFilter } from 'utils/empFilter';
+import {
+  GlobalStyle,
+  EmployeesContainerWrapper
+} from 'styles/employeesContainerStyles';
 
 import EmpList from 'components/empList';
 
@@ -22,10 +25,13 @@ const EmployeesContainer = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Employees List</h2>
-      {!loading && empList.length > 0 && <EmpList employees={empList} />}
-    </div>
+    <>
+      <GlobalStyle />
+      <EmployeesContainerWrapper data-test-id="employees-container">
+        <h1>Reward Gateway Employees List</h1>
+        {!loading && empList.length > 0 && <EmpList employees={empList} />}
+      </EmployeesContainerWrapper>
+    </>
   );
 };
 
