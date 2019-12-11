@@ -11,7 +11,10 @@ export const empListUrl = `${baseUrl}/list`;
 export const getEmpList = async () => {
   const result = await axios
     .get(empListUrl, {
-      auth: credentials
+      auth: credentials,
+      headers: {
+        'Access-Control-Request-Methods': '*'
+      }
     })
     .then(data => data);
 
