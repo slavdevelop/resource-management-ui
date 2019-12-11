@@ -4,12 +4,12 @@ import Employee from './employee';
 
 import { EmployeeWrapper } from 'styles/employeeStyles';
 
-const EmpList = ({ employees }) => {
+const EmpList = ({ employees, loading }) => {
   return (
     <div>
       {employees.map(emp => (
         <EmployeeWrapper key={emp.uuid}>
-          <Employee key={emp.uuid} {...emp} />
+          <Employee {...emp} />
         </EmployeeWrapper>
       ))}
     </div>
